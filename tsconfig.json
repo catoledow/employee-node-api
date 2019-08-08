@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["es2017", "esnext.asynciterable"],
+    "noImplicitAny": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "node_modules/*",
+      ]
+    }
+  },
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/routes.ts"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "src/routes.ts"
+    ]
+  }
+}

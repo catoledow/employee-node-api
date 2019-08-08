@@ -1,0 +1,37 @@
+{
+  "enable": true,
+  "extends": ["tslint:recommended", "tslint-sonarts"],
+  "linterOptions": {
+    "exclude": []
+  },
+  "rules": {
+    "quotemark": [true, "single", "avoid-escape", "avoid-template"],
+    "no-console": false,
+    "radix": false,
+    "ordered-imports": false,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ],
+    "max-line-length": [true, 140],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "private-static-field",
+          "public-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ]
+  }
+}
